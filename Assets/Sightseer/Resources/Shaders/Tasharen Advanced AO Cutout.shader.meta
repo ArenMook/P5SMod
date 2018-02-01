@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 72afab38c8cf69b4781bfca3903e6333
+timeCreated: 1487044415
+licenseType: Pro
+ShaderImporter:
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _ColorMask: {instanceID: 0}
+  - _BumpMap: {instanceID: 0}
+  - _OcclusionMap: {instanceID: 0}
+  - _GlowMap: {instanceID: 0}
+  - _BlendTex0: {fileID: 2800000, guid: d039ba12576831545ab2deec85d93ccd, type: 3}
+  - _BlendTex1: {instanceID: 0}
+  - _DamageTex: {fileID: 2800000, guid: f10aac43a5c86174eb033aec5776a51b, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

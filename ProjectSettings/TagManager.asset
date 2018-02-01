@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - MainLight
+  - Ground
+  - Terrain
+  - NoBatching
+  - Sensor
+  - NoSlicing
+  - Armor
+  - Vehicle
+  - Minable
+  - Shield
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Dragged Collider
+  - Distant Objects
+  - Probe Only
+  - No Reflection
+  - Terrain
+  - Vehicle
+  - Clickable
+  - Tree Invalidator
+  - Trees
+  - Distant - Not reflected
+  - Wheel Collider
+  - Structural
+  - Platform Trigger
+  - Platform
+  - Projectile
+  - Grass
+  - Shield
+  - Vehicle Trigger
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Preview
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

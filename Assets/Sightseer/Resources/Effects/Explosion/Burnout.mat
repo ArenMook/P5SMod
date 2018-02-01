@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Burnout
+  m_Shader: {fileID: 4800000, guid: 3d5319f66617524479ee4b71abaa8365, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 639745eb4b55fe249a31309031d52ef9, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BurnTex
+      second:
+        m_Texture: {fileID: 2800000, guid: f10aac43a5c86174eb033aec5776a51b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: f10aac43a5c86174eb033aec5776a51b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BlendPower
+      second: 64
+    - first:
+        name: _DamageScale
+      second: 1
+    - first:
+        name: _Shininess
+      second: 1
+    - first:
+        name: _Smoothness
+      second: 0.2
+    - first:
+        name: _Specular
+      second: 1
+    m_Colors:
+    - first:
+        name: _BurnColor
+      second: {r: 20.000004, g: 1, b: 0, a: 1}
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Params
+      second: {r: 0, g: 0, b: 2, a: 16}
+    - first:
+        name: _SpecColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Specular
+      second: {r: 0.14999998, g: 0.14999998, b: 0.14999998, a: 0.15}
