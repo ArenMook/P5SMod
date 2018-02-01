@@ -3,3 +3,8 @@
 /obj
 *.sln
 *.csproj
+/.vs
+/Assets/Content
+/Assets/Content.meta
+/Assets/Temp
+/Assets/Temp.meta
