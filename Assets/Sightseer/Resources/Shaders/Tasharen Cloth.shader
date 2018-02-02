@@ -3,7 +3,7 @@
 	Properties
 	{
 		[NoScaleOffset] _MainTex ("Albedo (RGB), Alpha (A)", 2D) = "white" {}
-		[NoScaleOffset] _ColorMask ("Color Mask (RGB), Tint Amount (A)", 2D) = "clear" {}
+		[NoScaleOffset] _ColorMask ("Color Mask (RGB), Tint Amount (A)", 2D) = "black" {}
 		[NoScaleOffset] _BlendTex0 ("Detail 0 (RGB)", 2D) = "white" {}
 		[NoScaleOffset] _DamageTex ("Damage Texture (A)", 2D) = "white" {}
 

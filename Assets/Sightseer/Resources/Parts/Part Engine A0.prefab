@@ -9,108 +9,79 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1955563702671580}
+  m_RootGameObject: {fileID: 1876186156576720}
   m_IsPrefabParent: 1
---- !u!1 &1190148789943182
+--- !u!1 &1312534001125904
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4840092535589962}
+  - component: {fileID: 4827166943682668}
+  - component: {fileID: 82979625507593758}
   m_Layer: 13
-  m_Name: Thumbnail
+  m_Name: Engine Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1907778755455724
+--- !u!1 &1876186156576720
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4387069867427178}
-  - component: {fileID: 82173882035018432}
+  - component: {fileID: 4810011971770918}
+  - component: {fileID: 114442703310989286}
+  - component: {fileID: 114634518404799616}
+  - component: {fileID: 114942989434985826}
   m_Layer: 13
-  m_Name: Thruster Sound
+  m_Name: Part Engine A0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1955563702671580
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4836259005867930}
-  - component: {fileID: 114012090294152228}
-  - component: {fileID: 114460696815593018}
-  - component: {fileID: 114910342801515524}
-  m_Layer: 13
-  m_Name: Part IThrusters
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4387069867427178
+--- !u!4 &4810011971770918
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1907778755455724}
+  m_GameObject: {fileID: 1876186156576720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4836259005867930}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4836259005867930
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1955563702671580}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -229.314, y: 7.920788, z: 203.75395}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4387069867427178}
-  - {fileID: 4840092535589962}
+  - {fileID: 4827166943682668}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4840092535589962
+--- !u!4 &4827166943682668
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1190148789943182}
+  m_GameObject: {fileID: 1312534001125904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4836259005867930}
-  m_RootOrder: 1
+  m_Father: {fileID: 4810011971770918}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82173882035018432
+--- !u!82 &82979625507593758
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1907778755455724}
+  m_GameObject: {fileID: 1312534001125904}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 507d474a2e7a22544af9e1f096a8a5ac, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 173af4351fd60f545900818b36068f2d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -118,7 +89,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 100
+  Priority: 50
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 70
@@ -181,70 +152,84 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114012090294152228
+--- !u!114 &114442703310989286
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1955563702671580}
+  m_GameObject: {fileID: 1876186156576720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1896346716, guid: 8ad489df3b0df2a4799073ce92432b81, type: 3}
+  m_Script: {fileID: -1689790898, guid: 8ad489df3b0df2a4799073ce92432b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleKey: IThrusters
-  tooltipKey: thrustersInfo
+  titleKey: 
+  tooltipKey: acim0
   nameIsLocalizable: 1
   onByDefault: 1
   powerPerSecond: 0
   critDisableTime: 0
   centerOfMass: {x: 0, y: 0, z: 0}
-  activeState: 0
-  idealMass: 3
-  powerUsage: 60
-  prefab: {fileID: 174920, guid: dac527b694d54b545ba6b1c2a5633e45, type: 2}
-  useBuoyancyPoints: 1
-  audioSource: {fileID: 82173882035018432}
-  flammable:
-  - name: H2
-    value: 5
-    force: 1
-  - name: C2H6
-    value: 5
-    force: 1.15
-  - name: CH4
-    value: 5
-    force: 0.85
---- !u!114 &114460696815593018
+  activeState: 1
+  electricPowerCost: 15
+  electricTorque: 6
+  electricMaxSpeed: 8.5
+  fueledTorque: 0
+  fueledMaxSpeed: 9
+  fuel:
+    name: 
+    value: 0
+  submergedForce: 1
+  submergedTorque: 2
+  engineSound: {fileID: 82979625507593758}
+  soundCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &114634518404799616
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1955563702671580}
-  m_Enabled: 1
+  m_GameObject: {fileID: 1876186156576720}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -1152281984, guid: 8ad489df3b0df2a4799073ce92432b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thumbnailZoom: 0.85
+  thumbnailZoom: 0.65
   filters:
   - small
-  - thrusters
+  - engine
   - attachment
-  thumbnailPosition: {fileID: 4840092535589962}
+  thumbnailPosition: {fileID: 0}
   isHidden: 1
   isDeprecated: 0
   previewPrefab0: {fileID: 0}
   previewPrefab1: 
   previewTex: {fileID: 0}
   previewType: 0
---- !u!114 &114910342801515524
+--- !u!114 &114942989434985826
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1955563702671580}
-  m_Enabled: 1
+  m_GameObject: {fileID: 1876186156576720}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 1213550065, guid: 8ad489df3b0df2a4799073ce92432b81, type: 3}
   m_Name: 
@@ -254,7 +239,11 @@ MonoBehaviour:
   starterItem: 0
   resources:
   - name: Metal
-    value: 200
+    value: 2000
+  - name: Fe
+    value: 800
+  - name: Cu
+    value: 500
   repairCost: 0.2
   repairTick: 0.05
   massMultiplier: 1
