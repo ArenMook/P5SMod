@@ -67,7 +67,7 @@ MonoBehaviour:
   jumpCost: 100
   cooldown: 2
   sound:
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: d0e26a0bcf189344a8fc521a9fa66eb5, type: 3}
     volume: 1
     pitch: 1
 --- !u!114 &114247492743252678
