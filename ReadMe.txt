@@ -20,4 +20,6 @@ Steps:
    Assets -> DataNode -> Export Selected menu. You will want to export the assets into the
    My Documents/Sightseer/Mods/<Your Mod Name> folder. You can then play your mod by launching the game.
    
+Modding tutorial video: https://www.youtube.com/watch?v=KdV5IKwNgAQ
+
 Questions? Stop by the Tasharen Community discord: https://discord.gg/trruSNc
