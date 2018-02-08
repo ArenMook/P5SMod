@@ -61,10 +61,10 @@ static internal class DataNodeExporter
 			if (!string.IsNullOrEmpty(path))
 			{
 				EditorUtility.DisplayCancelableProgressBar("Working", "Creating a DataNode...", 0f);
-
+				ComponentSerialization.ClearReferences();
 				var data = go.Serialize(true, true, true);
 				if (data != null) Save(data, path, DataNode.SaveType.Text);
-
+				ComponentSerialization.ClearReferences();
 				EditorUtility.ClearProgressBar();
 			}
 		}
@@ -85,10 +85,10 @@ static internal class DataNodeExporter
 			if (!string.IsNullOrEmpty(path))
 			{
 				EditorUtility.DisplayCancelableProgressBar("Working", "Creating a DataNode...", 0f);
-
+				ComponentSerialization.ClearReferences();
 				var data = go.Serialize(true, true, true);
 				if (data != null) Save(data, path, DataNode.SaveType.Binary);
-
+				ComponentSerialization.ClearReferences();
 				EditorUtility.ClearProgressBar();
 			}
 		}
@@ -109,10 +109,10 @@ static internal class DataNodeExporter
 			if (!string.IsNullOrEmpty(path))
 			{
 				EditorUtility.DisplayCancelableProgressBar("Working", "Creating a DataNode...", 0f);
-
+				ComponentSerialization.ClearReferences();
 				var data = go.Serialize(true, true, true);
 				if (data != null) Save(data, path, DataNode.SaveType.Compressed);
-
+				ComponentSerialization.ClearReferences();
 				EditorUtility.ClearProgressBar();
 			}
 		}
@@ -214,6 +214,7 @@ static internal class DataNodeExporter
 		if (data != null && data.children.size > 0) Save(data, path, type);
 		else Debug.LogWarning("No assets found to serialize");
 
+		ComponentSerialization.ClearReferences();
 		EditorUtility.ClearProgressBar();
 	}
 
