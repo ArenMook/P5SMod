@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114827311524287062}
   - component: {fileID: 114925294947496386}
   m_Layer: 13
-  m_Name: Part ISensor A0
+  m_Name: Part Sensor A0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,13 +83,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitRange: 100
+  basedOnTurret: 0
   resourceRange: 100
   identifyRange: 25
   isPassive: 1
   sensorPoint: {fileID: 0}
-  sensorBlockers:
-    serializedVersion: 2
-    m_Bits: 2625536
 --- !u!114 &114827311524287062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,10 +102,14 @@ MonoBehaviour:
   titleKey: ISensor
   tooltipKey: ISensor A0
   nameIsLocalizable: 1
+  massless: 0
   onByDefault: 1
+  attackableByAI: 0
   powerPerSecond: 0
   critDisableTime: 0
   centerOfMass: {x: 0, y: 0, z: 0}
+  skills: []
+  buffs: []
   activeState: 0
   tween: {fileID: 0}
 --- !u!114 &114925294947496386
@@ -121,12 +123,14 @@ MonoBehaviour:
   m_Script: {fileID: -1152281984, guid: 8ad489df3b0df2a4799073ce92432b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sortOrder: 0
   thumbnailZoom: 0.65
   filters:
   - small
   - sensor
   - attachment
   thumbnailPosition: {fileID: 0}
+  lockedByTech: 1
   isHidden: 1
   isDeprecated: 0
   previewPrefab0: {fileID: 0}

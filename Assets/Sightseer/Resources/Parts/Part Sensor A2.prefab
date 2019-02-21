@@ -11,21 +11,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1385461216285210}
   m_IsPrefabParent: 1
---- !u!1 &1283609261151224
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4065269251667814}
-  m_Layer: 13
-  m_Name: Thumbnail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1385461216285210
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,29 +19,31 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4382074371676494}
-  - component: {fileID: 114148481763973612}
-  - component: {fileID: 114537534883001444}
-  - component: {fileID: 114833311797319174}
+  - component: {fileID: 114041510427446444}
+  - component: {fileID: 114810064823459984}
+  - component: {fileID: 114276139446024032}
   m_Layer: 13
-  m_Name: Part ISensor A1
+  m_Name: Part Sensor A2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4065269251667814
-Transform:
-  m_ObjectHideFlags: 1
+--- !u!1 &1987002465992028
+GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283609261151224}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.05, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4382074371676494}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4696419911679350}
+  m_Layer: 13
+  m_Name: Thumbnail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4382074371676494
 Transform:
   m_ObjectHideFlags: 1
@@ -67,11 +54,24 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4065269251667814}
+  - {fileID: 4696419911679350}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114148481763973612
+--- !u!4 &4696419911679350
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987002465992028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4382074371676494}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114041510427446444
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -83,14 +83,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitRange: 100
-  resourceRange: 150
-  identifyRange: 50
+  basedOnTurret: 0
+  resourceRange: 200
+  identifyRange: 65
   isPassive: 1
   sensorPoint: {fileID: 0}
-  sensorBlockers:
-    serializedVersion: 2
-    m_Bits: 2625536
---- !u!114 &114537534883001444
+--- !u!114 &114276139446024032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1385461216285210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1152281984, guid: 8ad489df3b0df2a4799073ce92432b81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortOrder: 0
+  thumbnailZoom: 0.65
+  filters:
+  - small
+  - sensor
+  - attachment
+  thumbnailPosition: {fileID: 0}
+  lockedByTech: 1
+  isHidden: 1
+  isDeprecated: 0
+  previewPrefab0: {fileID: 0}
+  previewPrefab1: 
+  previewTex: {fileID: 0}
+  previewType: 0
+--- !u!114 &114810064823459984
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,34 +125,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleKey: ISensor
-  tooltipKey: ISensor A1
+  tooltipKey: ISensor A2
   nameIsLocalizable: 1
+  massless: 0
   onByDefault: 1
+  attackableByAI: 0
   powerPerSecond: 0
   critDisableTime: 0
   centerOfMass: {x: 0, y: 0, z: 0}
+  skills: []
+  buffs: []
   activeState: 0
   tween: {fileID: 0}
---- !u!114 &114833311797319174
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1385461216285210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1152281984, guid: 8ad489df3b0df2a4799073ce92432b81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thumbnailZoom: 0.65
-  filters:
-  - small
-  - sensor
-  - attachment
-  thumbnailPosition: {fileID: 0}
-  isHidden: 1
-  isDeprecated: 0
-  previewPrefab0: {fileID: 0}
-  previewPrefab1: 
-  previewTex: {fileID: 0}
-  previewType: 0
